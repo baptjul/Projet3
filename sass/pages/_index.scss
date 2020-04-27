@@ -1,6 +1,5 @@
 .container {
     margin-top: 15rem;
-    align-content: center;
 }
 
 .grid {
@@ -24,43 +23,56 @@
 
 .first-menu {
     color: $first-color;
-    background-color: $background-1;
+    background-color: rgba($background-1, 0.2);
+    transition: background-color 400ms;
     @include box;
     &__title {
 
     }
     &__p {
         
+    }
+    &:hover {
+        background-color: rgba($background-1, 1);
     }
 }
 
 .second-menu {
     color: $second-color;
-    background-color: $background-2;
+    background-color: rgba($background-2, 0.2);
+    transition: background-color 400ms;
     @include box;
     &__title {
 
     }
     &__p {
         
+    }
+    &:hover {
+        background-color: rgba($background-2, 1);
     }
 }
 
 .third-menu {
     color: $third-color;
-    background-color: $background-3;
+    background-color: rgba($background-3, 0.2);
+    transition: background-color 400ms;
     @include box;
     &__title {
 
     }
     &__p {
         
+    }
+    &:hover {
+        background-color: rgba($background-3, 1);
     }
 }
 
 .fourth-menu {
     color: $fourth-color;
-    background-color: $background-4;
+    background-color: rgba($background-4, 0.2);
+    transition: background-color 400ms;
     @include box;
     &__title {
 
@@ -68,21 +80,23 @@
     &__p {
         
     }
+    &:hover {
+        background-color: rgba($background-4, 1);
+    }
 }
 
 .next {
     text-align: center;
-    color: $first-color;
-    margin-bottom: 5rem;
-
-    &__all {
-        background-color: $background-1;
-        @include box;
+    border: 2px solid $main-color;;
+    border-radius: 15px;
+    background-color: $main-color;
+    margin: 0 500px 5rem 500px;
+    transform: scale(1);
+    transition: transform 300ms;
+    &__text {
+        color: $title-color;
     }
-    &__title {
-
-    }
-    &__p {
-        
+    &:hover {
+        transform: scale(1.15);
     }
 }
