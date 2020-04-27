@@ -1,0 +1,7 @@
+@mixin box {
+    padding: $margin-up $margin-side $margin-up $margin-side;
+}
+
+@mixin shadow {
+    box-shadow: 0 0 20px rgba(0,0,0,0.20);
+}

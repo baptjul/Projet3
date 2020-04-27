@@ -1,0 +1,15 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    
+}   
+
+html {
+    font-size: 80%;
+}
+
+body {
+    background: $background-all;
+}
