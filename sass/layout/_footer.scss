@@ -1,14 +1,33 @@
+@keyframes shake {
+    20% {
+        transform: translateX($shake-intensity);
+    }
+    80% {
+        transform: translateX(-$shake-intensity);
+    }
+}
+
 .footer {
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     background-color: $main-color;
-    height: 8rem;
+    height: 6rem;
     width: 100%;
     padding: 0 2rem 0 2rem;
     border: 1px solid $main-color;
-     &__content {
-     color: $title-color;
-     margin-top: 3rem;
+    position : fixed;
+    bottom: 0;
+    z-index: 2;
+    &__content {
+        color: $title-color;
+        margin-top: 2rem;
+        font-family: $font-main;
+        font-size: 1.5em;
+        &:hover {
+            animation: shake 100ms cubic-bezier(.54,.17,.42,.85) 3;
+        }
     }
+    
 }
+

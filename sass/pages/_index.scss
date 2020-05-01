@@ -1,102 +1,165 @@
 .container {
-    margin-top: 15rem;
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(2, 30rem);
+    grid-template-columns: repeat(2, 35em);
+    grid-auto-rows: minmax(48em, 48em);
     text-align: center;
     place-content: center;
-    grid-gap: 10rem;
+    grid-gap: 10em;
     margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 6rem;
 }
 
 .boxing {
     @include shadow;
-    transform: scale(1);
-    transition: transform 400ms;
-    &:hover {
-        transform: scale(1.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__first {
+        @include box_1;
+        @include background-color-anim($background-1);
+    }
+    &__second {
+        @include box_2;
+        @include background-color-anim($background-2);
+    }
+    &__third {
+        @include box_3;
+        @include background-color-anim($background-3);
+    }
+    &__fourth {
+        @include box_3;
+        @include background-color-anim($background-4);
     }
 }
 
 .first-menu {
     color: $first-color;
-    background-color: rgba($background-1, 0.2);
-    transition: background-color 400ms;
-    @include box;
+    vertical-align: middle;
+    @include scale-anim;
+    i {
+        font-size: 3.5em;
+        color: #f5856d;
+    }
     &__title {
-
+        margin-top: .5em;
+        font-family: $font-dancing;
+        font-size: 2.5em;
     }
     &__p {
-        
-    }
-    &:hover {
-        background-color: rgba($background-1, 1);
+        margin-top: 0;
+        font-family: $font-amatic;
+        font-size: $font-menu;
+        font-weight: bold;
+        text-transform: uppercase;
     }
 }
 
 .second-menu {
     color: $second-color;
-    background-color: rgba($background-2, 0.2);
-    transition: background-color 400ms;
-    @include box;
+    @include scale-anim;
     &__title {
-
+        font-family: $font-marmelad;
+        font-size: 2em;
     }
     &__p {
-        
-    }
-    &:hover {
-        background-color: rgba($background-2, 1);
+        margin-top: 0;
+        font-family: $font-marmelad;
+        font-size: $font-menu;
     }
 }
 
 .third-menu {
     color: $third-color;
-    background-color: rgba($background-3, 0.2);
-    transition: background-color 400ms;
-    @include box;
+    @include scale-anim;
     &__title {
-
+        font-family: $font-allura;
+        font-size: 2.8em;
     }
     &__p {
-        
-    }
-    &:hover {
-        background-color: rgba($background-3, 1);
+        margin-top: 0;
+        font-family: $font-amatic;
+        font-size: $font-menu;
     }
 }
 
 .fourth-menu {
     color: $fourth-color;
-    background-color: rgba($background-4, 0.2);
-    transition: background-color 400ms;
-    @include box;
+    @include scale-anim;
     &__title {
-
+        font-family: $font-playball;
+        font-size: 2.5em;
     }
     &__p {
-        
+        margin-top: 0;
+        font-family: $font-amatic;
+        font-size: $font-menu;
     }
-    &:hover {
-        background-color: rgba($background-4, 1);
+}
+
+@keyframes dots {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
     }
 }
 
 .next {
-    text-align: center;
-    border: 2px solid $main-color;;
-    border-radius: 15px;
+    display: inline-block;
     background-color: $main-color;
-    margin: 0 500px 5rem 500px;
-    transform: scale(1);
-    transition: transform 300ms;
-    &__text {
-        color: $title-color;
+    border: 1px solid $main-color;
+    border-radius: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    a {
+        text-align: center;
     }
-    &:hover {
-        transform: scale(1.15);
+    &__all {
+        display: flex;
+        align-items: baseline;
+        @include scale-anim;
+        &__text {
+            font-family: $font-main;
+            font-size: 1.5em;
+            color: $title-color;
+            margin-right: .3em;
+            &:hover + .dots > .dots__anim {
+                animation: dots 1500ms ease-in-out infinite;
+                animation-direction: alternate;
+                @for $i from 1 through 3 {
+                    &--#{$i} {
+                        animation-delay: 300ms * $i;
+                    }
+                }
+            }
+        }
     }
 }
+
+.dots {
+    display: flex;
+    &__anim {
+        width: 6px;
+        height: 6px;
+        background-color: $title-color;
+        border-radius: 100%;
+        margin-right: 2px;
+    }
+}
+            
+                
+
+
+    
+ 
+
