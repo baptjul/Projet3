@@ -6,36 +6,45 @@
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(2, 35em);
-    grid-auto-rows: minmax(48em, 48em);
+    grid-template-columns: repeat(2, minmax(450px, 35%));
+    grid-auto-rows: 950px;
     text-align: center;
     place-content: center;
-    grid-gap: 10em;
+    grid-gap: 60px;
     margin-top: 5rem;
     margin-bottom: 6rem;
+    @media (max-width: 1360px) {
+        grid-auto-rows: 700px;
+    }
+    @media (max-width: 992px) {
+        grid-template-columns: 85%;
+        grid-auto-rows: 700px;
+        grid-gap: 40px;
+    }
+    @media (max-width: 420px) {
+        grid-template-columns: 95%;
+        grid-auto-rows: 550px;
+        grid-gap: 20px;
+        margin-top: 2em;
+        margin-bottom: 3rem;
+    }
 }
 
 .boxing {
     @include shadow;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     &__first {
-        @include box_1;
         @include background-color-anim($background-1);
     }
     &__second {
-        @include box_2;
         @include background-color-anim($background-2);
     }
     &__third {
-        @include box_3;
         @include background-color-anim($background-3);
     }
     &__fourth {
-        @include box_3;
         @include background-color-anim($background-4);
     }
+    //&:hover > [href*="menu"] { @include scale-anim; }
 }
 
 .first-menu {
@@ -43,13 +52,13 @@
     vertical-align: middle;
     @include scale-anim;
     i {
-        font-size: 3.5em;
+        font-size: 4em;
         color: #f5856d;
     }
     &__title {
         margin-top: .5em;
         font-family: $font-dancing;
-        font-size: 2.5em;
+        font-size: 3em;
     }
     &__p {
         margin-top: 0;
@@ -65,7 +74,7 @@
     @include scale-anim;
     &__title {
         font-family: $font-marmelad;
-        font-size: 2em;
+        font-size: 2.5em;
     }
     &__p {
         margin-top: 0;
@@ -79,7 +88,7 @@
     @include scale-anim;
     &__title {
         font-family: $font-allura;
-        font-size: 2.8em;
+        font-size: 3em;
     }
     &__p {
         margin-top: 0;
@@ -93,7 +102,7 @@
     @include scale-anim;
     &__title {
         font-family: $font-playball;
-        font-size: 2.5em;
+        font-size: 3em;
     }
     &__p {
         margin-top: 0;
@@ -128,20 +137,21 @@
         display: flex;
         align-items: baseline;
         @include scale-anim;
+        &:hover > .dots > .dots__anim {
+            animation: dots 1500ms ease-in-out infinite;
+            animation-direction: alternate;
+            @for $i from 1 through 3 {
+                &--#{$i} {
+                    animation-delay: 300ms * $i;
+                }
+            }
+        }
         &__text {
             font-family: $font-main;
             font-size: 1.5em;
             color: $title-color;
             margin-right: .3em;
-            &:hover + .dots > .dots__anim {
-                animation: dots 1500ms ease-in-out infinite;
-                animation-direction: alternate;
-                @for $i from 1 through 3 {
-                    &--#{$i} {
-                        animation-delay: 300ms * $i;
-                    }
-                }
-            }
+           
         }
     }
 }

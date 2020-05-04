@@ -15,6 +15,10 @@
 }
 
 @mixin background-color-anim($color) {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgba($color, 1);
     transition: background-color 400ms;
     &:hover {
@@ -26,6 +30,6 @@
     transform: scale(1);
     transition: transform 400ms;
     &:hover {
-        transform: scale(1.25);
+        transform: scale(1.15);
     }
 }
