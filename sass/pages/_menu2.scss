@@ -1,0 +1,11 @@
+.box-second {
+    @include box-pages($background-2);
+}
+
+.menu-title2 {
+    font-family: $font-marmelad;
+    color: $second-color;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 2.5em;
+}

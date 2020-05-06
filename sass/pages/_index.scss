@@ -55,7 +55,7 @@
     @include scale-anim;
     i {
         font-size: 4em;
-        color: #f5856d;
+        color: $symbol-color;
     }
     &__title {
         margin-top: .5em;

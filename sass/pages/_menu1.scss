@@ -1,0 +1,33 @@
+.box-first {
+    @include box-pages($background-1);
+}
+
+.menu-title1 {
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 2em;
+    i {
+        color: $symbol-color;
+        font-size: 3em;
+        margin-bottom: 0;
+    }
+    &__text {
+        font-family: $font-dancing;
+        font-size: 2em;
+        color: $first-color;
+        margin-top: 15px;
+    }
+}
+
+.end-page {
+    text-align: center;
+    color: $first-color;
+    font-size: 40px;
+    font-family: $font-dancing;
+    i {
+        color: $symbol-color;
+        margin-right: 0.5em;
+    }
+}
+
+    

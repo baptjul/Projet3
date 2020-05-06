@@ -1,0 +1,38 @@
+.content-page {
+    margin-top: 5rem;
+    margin-bottom: 6rem;
+    &__title {
+        font-family: $font-main;
+        color: black;
+        font-size: 3.5em;
+        text-align: center;
+    }
+}
+
+.category {
+    margin-bottom: 5rem;
+    &__title{
+        text-align: center;
+        font-size: 1.8em;
+        font-weight: bold;
+        margin-bottom: 2.5em;
+        font-family: $font-base;
+    }
+    &__main {
+        font-family: $font-indie;
+    }
+    p {
+        margin-top: 8px;
+        font-size: 28px;
+        }
+    }
+
+.main-cours {
+    display: flex;
+    justify-content: space-between;
+    &__prices {
+        font-weight: bold;
+        margin-left: 15px;
+        align-items: center;;
+    }
+}

@@ -1,0 +1,11 @@
+.box-third {
+    @include box-pages($background-3);
+}
+
+.menu-title3 {
+    font-family: $font-allura;
+    color: $third-color;
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 2em;
+}

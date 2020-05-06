@@ -298,4 +298,175 @@ a {
   margin-right: 2px;
 }
 
+.content-page {
+  margin-top: 5rem;
+  margin-bottom: 6rem;
+}
+.content-page__title {
+  font-family: "Noto Sans JP", sans-serif;
+  color: black;
+  font-size: 3.5em;
+  text-align: center;
+}
+
+.category {
+  margin-bottom: 5rem;
+}
+.category__title {
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 2.5em;
+  font-family: cursive;
+}
+.category__main {
+  font-family: "Indie Flower", cursive;
+}
+.category p {
+  margin-top: 8px;
+  font-size: 28px;
+}
+
+.main-cours {
+  display: flex;
+  justify-content: space-between;
+}
+.main-cours__prices {
+  font-weight: bold;
+  margin-left: 15px;
+  align-items: center;
+}
+
+.box-first {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 65%;
+  height: 100%;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 8rem 100px 8rem 100px;
+  background-color: #fcdfdb;
+}
+@media (max-width: 992px) {
+  .box-first {
+    width: 80%;
+    padding: 5rem 18px 5rem 18px;
+  }
+}
+
+.menu-title1 {
+  font-size: 1.8em;
+  text-align: center;
+  margin-bottom: 2em;
+}
+.menu-title1 i {
+  color: #f5856d;
+  font-size: 3em;
+  margin-bottom: 0;
+}
+.menu-title1__text {
+  font-family: "Dancing Script", cursive;
+  font-size: 2em;
+  color: #481e24;
+  margin-top: 15px;
+}
+
+.end-page {
+  text-align: center;
+  color: #481e24;
+  font-size: 40px;
+  font-family: "Dancing Script", cursive;
+}
+.end-page i {
+  color: #f5856d;
+  margin-right: 0.5em;
+}
+
+.box-second {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 65%;
+  height: 100%;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 8rem 100px 8rem 100px;
+  background-color: #fff5fe;
+}
+@media (max-width: 992px) {
+  .box-second {
+    width: 80%;
+    padding: 5rem 18px 5rem 18px;
+  }
+}
+
+.menu-title2 {
+  font-family: "Marmelad", sans-serif;
+  color: #c77412;
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 2.5em;
+}
+
+.box-third {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 65%;
+  height: 100%;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 8rem 100px 8rem 100px;
+  background-color: #f5f5f5;
+}
+@media (max-width: 992px) {
+  .box-third {
+    width: 80%;
+    padding: 5rem 18px 5rem 18px;
+  }
+}
+
+.menu-title3 {
+  font-family: "Allura", cursive;
+  color: #0887fb;
+  font-size: 4em;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.box-fourth {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 65%;
+  height: 100%;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 8rem 100px 8rem 100px;
+  background-color: #fdfffd;
+}
+@media (max-width: 992px) {
+  .box-fourth {
+    width: 80%;
+    padding: 5rem 18px 5rem 18px;
+  }
+}
+
+.menu-title4 {
+  font-family: "Playball", cursive;
+  color: #75c05a;
+  font-size: 4em;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
 /*# sourceMappingURL=style.css.map */
