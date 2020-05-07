@@ -171,13 +171,13 @@ a {
 }
 .first-menu__title {
   margin-top: 0.5em;
-  font-family: "Dancing Script", cursive;
+  font-family: "Devonshire", cursive;
   font-size: 3em;
 }
 .first-menu__p {
   margin-top: 0;
   font-family: "Caveat", cursive;
-  font-size: 3.5em;
+  font-size: 60px;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -191,13 +191,15 @@ a {
   transform: scale(1.15);
 }
 .second-menu__title {
-  font-family: "Marmelad", sans-serif;
-  font-size: 2.5em;
+  font-family: "Croissant One", cursive;
+  font-size: 2em;
+  margin-bottom: 35px;
 }
 .second-menu__p {
   margin-top: 0;
-  font-family: "Marmelad", sans-serif;
-  font-size: 3.5em;
+  font-family: "Libre Baskerville", serif;
+  font-weight: bold;
+  font-size: 60px;
 }
 
 .third-menu {
@@ -210,12 +212,12 @@ a {
 }
 .third-menu__title {
   font-family: "Allura", cursive;
-  font-size: 3em;
+  font-size: 3.5em;
 }
 .third-menu__p {
   margin-top: 0;
   font-family: "Caveat", cursive;
-  font-size: 3.5em;
+  font-size: 60px;
 }
 
 .fourth-menu {
@@ -227,13 +229,13 @@ a {
   transform: scale(1.15);
 }
 .fourth-menu__title {
-  font-family: "Playball", cursive;
+  font-family: "Kaushan Script", cursive;
   font-size: 3em;
 }
 .fourth-menu__p {
   margin-top: 0;
   font-family: "Caveat", cursive;
-  font-size: 3.5em;
+  font-size: 60px;
 }
 
 @keyframes dots {
@@ -314,17 +316,17 @@ a {
 }
 .category__title {
   text-align: center;
-  font-size: 1.8em;
+  font-size: 2.1em;
   font-weight: bold;
-  margin-bottom: 2.5em;
+  margin-bottom: 2.8em;
   font-family: cursive;
 }
 .category__main {
   font-family: "Caveat", cursive;
 }
-.category p {
+.category__main p {
   margin-top: 8px;
-  font-size: 28px;
+  font-size: 35px;
 }
 
 .main-cours {
@@ -347,7 +349,7 @@ a {
   margin: auto;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  padding: 8rem 100px 8rem 100px;
+  padding: 8rem 150px 8rem 150px;
   background-color: #fcdfdb;
 }
 @media (max-width: 992px) {
@@ -358,9 +360,9 @@ a {
 }
 
 .menu-title1 {
-  font-size: 1.8em;
+  font-size: 3em;
   text-align: center;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 .menu-title1 i {
   color: #f5856d;
@@ -368,7 +370,7 @@ a {
   margin-bottom: 0;
 }
 .menu-title1__text {
-  font-family: "Dancing Script", cursive;
+  font-family: "Devonshire", cursive;
   font-size: 2em;
   color: #481e24;
   margin-top: 15px;
@@ -377,8 +379,8 @@ a {
 .end-page {
   text-align: center;
   color: #481e24;
-  font-size: 40px;
-  font-family: "Dancing Script", cursive;
+  font-size: 50px;
+  font-family: "Devonshire", cursive;
 }
 .end-page i {
   color: #f5856d;
@@ -395,7 +397,7 @@ a {
   margin: auto;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  padding: 8rem 100px 8rem 100px;
+  padding: 8rem 150px 8rem 150px;
   background-color: #fff5fe;
 }
 @media (max-width: 992px) {
@@ -406,11 +408,57 @@ a {
 }
 
 .menu-title2 {
-  font-family: "Marmelad", sans-serif;
+  font-family: "Croissant One", cursive;
   color: #c77412;
   font-size: 3em;
   text-align: center;
-  margin-bottom: 2.5em;
+  margin-bottom: 3em;
+}
+
+.category__title1 {
+  text-align: center;
+  font-size: 2.1em;
+  font-weight: bold;
+  margin-bottom: 2.8em;
+  font-family: "Libre Baskerville", serif;
+  color: #ca7c21;
+}
+.category__title2 {
+  text-align: center;
+  font-size: 2.1em;
+  font-weight: bold;
+  margin-bottom: 2.8em;
+  font-family: "Libre Baskerville", serif;
+  color: #b783ad;
+}
+.category__title3 {
+  text-align: center;
+  font-size: 2.1em;
+  font-weight: bold;
+  margin-bottom: 2.8em;
+  font-family: "Libre Baskerville", serif;
+  color: #7e5fd2;
+}
+.category__main1 {
+  color: #ca7c21;
+}
+.category__main1 p {
+  margin-top: 8px;
+  font-size: 30px;
+}
+.category__main2 {
+  color: #b783ad;
+}
+.category__main2 p {
+  margin-top: 8px;
+  font-size: 30px;
+}
+.category__main3 {
+  color: #7e5fd2;
+}
+.category__main3 p {
+  margin-top: 8px;
+  font-size: 30px;
 }
 
 .box-third {
@@ -423,7 +471,7 @@ a {
   margin: auto;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  padding: 8rem 100px 8rem 100px;
+  padding: 8rem 150px 8rem 150px;
   background-color: #f5f5f5;
 }
 @media (max-width: 992px) {
@@ -438,7 +486,7 @@ a {
   color: #0887fb;
   font-size: 4em;
   text-align: center;
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
 }
 
 .box-fourth {
@@ -451,7 +499,7 @@ a {
   margin: auto;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  padding: 8rem 100px 8rem 100px;
+  padding: 8rem 150px 8rem 150px;
   background-color: #fdfffd;
 }
 @media (max-width: 992px) {
@@ -462,7 +510,7 @@ a {
 }
 
 .menu-title4 {
-  font-family: "Playball", cursive;
+  font-family: "Kaushan Script", cursive;
   color: #75c05a;
   font-size: 4em;
   text-align: center;

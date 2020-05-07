@@ -59,7 +59,7 @@
     }
     &__title {
         margin-top: .5em;
-        font-family: $font-dancing;
+        font-family: $font-devonshire;
         font-size: 3em;
     }
     &__p {
@@ -75,12 +75,14 @@
     color: $second-color;
     @include scale-anim;
     &__title {
-        font-family: $font-marmelad;
-        font-size: 2.5em;
+        font-family: $font-croissant;
+        font-size: 2em;
+        margin-bottom: 35px;
     }
     &__p {
         margin-top: 0;
-        font-family: $font-marmelad;
+        font-family: $font-libre;
+        font-weight: bold;
         font-size: $font-menu;
     }
 }
@@ -90,7 +92,7 @@
     @include scale-anim;
     &__title {
         font-family: $font-allura;
-        font-size: 3em;
+        font-size: 3.5em;
     }
     &__p {
         margin-top: 0;
@@ -103,7 +105,7 @@
     color: $fourth-color;
     @include scale-anim;
     &__title {
-        font-family: $font-playball;
+        font-family: $font-kaushan;
         font-size: 3em;
     }
     &__p {

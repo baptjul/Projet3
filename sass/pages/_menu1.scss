@@ -3,16 +3,16 @@
 }
 
 .menu-title1 {
-    font-size: 1.8em;
+    font-size: 3em;
     text-align: center;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     i {
         color: $symbol-color;
         font-size: 3em;
         margin-bottom: 0;
     }
     &__text {
-        font-family: $font-dancing;
+        font-family: $font-devonshire;
         font-size: 2em;
         color: $first-color;
         margin-top: 15px;
@@ -22,12 +22,12 @@
 .end-page {
     text-align: center;
     color: $first-color;
-    font-size: 40px;
-    font-family: $font-dancing;
+    font-size: 50px;
+    font-family: $font-devonshire;
     i {
         color: $symbol-color;
         margin-right: 0.5em;
     }
 }
 
-    
+  
