@@ -80,7 +80,6 @@ a {
   display: grid;
   grid-template-columns: repeat(2, minmax(450px, 35%));
   grid-auto-rows: 950px;
-  text-align: center;
   place-content: center;
   grid-gap: 60px;
   margin-top: 5rem;
@@ -138,11 +137,11 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: whitesmoke;
+  background-color: #f2f2f2;
   transition: background-color 400ms;
 }
 .boxing__third:hover {
-  background-color: rgba(245, 245, 245, 0);
+  background-color: rgba(242, 242, 242, 0);
 }
 .boxing__fourth {
   height: 100%;
@@ -321,6 +320,24 @@ a {
   margin-bottom: 2.8em;
   font-family: cursive;
 }
+.category__title span {
+  position: relative;
+}
+.category__title span:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  visibility: hidden;
+  transition: all 400ms ease-in-out;
+}
+.category__title span:hover:before {
+  visibility: visible;
+  width: 100%;
+}
 .category__main {
   font-family: "Caveat", cursive;
 }
@@ -376,6 +393,43 @@ a {
   margin-top: 15px;
 }
 
+.category-first {
+  margin-bottom: 5rem;
+  color: #481e24;
+}
+.category-first__title {
+  text-align: center;
+  font-size: 2.1em;
+  font-weight: bold;
+  margin-bottom: 2.8em;
+  font-family: cursive;
+}
+.category-first__title span {
+  position: relative;
+}
+.category-first__title span:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #481e24;
+  visibility: hidden;
+  transition: all 400ms ease-in-out;
+}
+.category-first__title span:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+.category-first__main {
+  font-family: "Caveat", cursive;
+}
+.category-first__main p {
+  margin-top: 8px;
+  font-size: 35px;
+}
+
 .end-page {
   text-align: center;
   color: #481e24;
@@ -423,6 +477,24 @@ a {
   font-family: "Libre Baskerville", serif;
   color: #ca7c21;
 }
+.category__title1 span {
+  position: relative;
+}
+.category__title1 span:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #ca7c21;
+  visibility: hidden;
+  transition: all 400ms ease-in-out;
+}
+.category__title1 span:hover:before {
+  visibility: visible;
+  width: 100%;
+}
 .category__title2 {
   text-align: center;
   font-size: 2.1em;
@@ -431,6 +503,24 @@ a {
   font-family: "Libre Baskerville", serif;
   color: #b783ad;
 }
+.category__title2 span {
+  position: relative;
+}
+.category__title2 span:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #b783ad;
+  visibility: hidden;
+  transition: all 400ms ease-in-out;
+}
+.category__title2 span:hover:before {
+  visibility: visible;
+  width: 100%;
+}
 .category__title3 {
   text-align: center;
   font-size: 2.1em;
@@ -438,6 +528,24 @@ a {
   margin-bottom: 2.8em;
   font-family: "Libre Baskerville", serif;
   color: #7e5fd2;
+}
+.category__title3 span {
+  position: relative;
+}
+.category__title3 span:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #7e5fd2;
+  visibility: hidden;
+  transition: all 400ms ease-in-out;
+}
+.category__title3 span:hover:before {
+  visibility: visible;
+  width: 100%;
 }
 .category__main1 {
   color: #ca7c21;
@@ -472,7 +580,7 @@ a {
   margin-top: 3rem;
   margin-bottom: 3rem;
   padding: 8rem 150px 8rem 150px;
-  background-color: #f5f5f5;
+  background-color: #f2f2f2;
 }
 @media (max-width: 992px) {
   .box-third {

@@ -57,3 +57,22 @@
     margin-top: 8px;
     font-size: 30px;
 }
+
+@mixin underline-animation($color) {
+    position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            background-color: $color;
+            visibility: hidden;
+            transition: all 400ms ease-in-out;
+        }
+        &:hover:before {
+            visibility: visible;
+            width: 100%;
+          }
+}

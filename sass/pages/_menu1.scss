@@ -19,6 +19,24 @@
     }
 }
 
+.category-first {
+    margin-bottom: 5rem;
+    color: $first-color;
+    &__title{
+        @include category-title;
+        font-family: $font-base;
+        span {
+            @include underline-animation($first-color);
+        }
+    }
+    &__main {
+        font-family: $font-caveat;
+        p {
+            @include p-menu;
+            }
+    }
+}
+
 .end-page {
     text-align: center;
     color: $first-color;

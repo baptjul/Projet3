@@ -15,16 +15,25 @@
         @include category-title;
         font-family: $font-libre;
         color: 	$menu-color1;
+        span {
+            @include underline-animation($menu-color1);
+        }
     }
     &__title2 {
         @include category-title;
         font-family: $font-libre;
         color: $menu-color2;
+        span {
+            @include underline-animation($menu-color2);
+        }
     }
     &__title3 {
         @include category-title;
         font-family: $font-libre;
         color: $menu-color3;
+        span {
+            @include underline-animation($menu-color3);
+        }
     }
     &__main1 {
         color: 	$menu-color1;
