@@ -4,7 +4,7 @@
 
 .menu-title3 {
     font-family: $font-allura;
-    color: $third-color;
+    @include text-gradiant($third-color, $third-color2);
     font-size: 4em;
     text-align: center;
     margin-bottom: 1.5em;

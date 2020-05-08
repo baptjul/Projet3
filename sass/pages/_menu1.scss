@@ -7,7 +7,7 @@
     text-align: center;
     margin-bottom: 1em;
     i {
-        color: $symbol-color;
+        @include text-gradiant($symbol-color, $symbol-color2);
         font-size: 3em;
         margin-bottom: 0;
     }
@@ -43,7 +43,7 @@
     font-size: 50px;
     font-family: $font-devonshire;
     i {
-        color: $symbol-color;
+        @include text-gradiant($symbol-color, $symbol-color2);
         margin-right: 0.5em;
     }
 }

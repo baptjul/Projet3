@@ -3,6 +3,12 @@
     box-shadow: 0 0 20px rgba(0,0,0,0.20);
 }
 
+@mixin text-gradiant($color1, $color2) {
+    background: linear-gradient(to right, $color1 0%, $color2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 @mixin background-color-anim($color) {
     height: 100%;
     display: flex;

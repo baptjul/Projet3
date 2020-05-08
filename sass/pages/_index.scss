@@ -54,7 +54,7 @@
     @include scale-anim;
     i {
         font-size: 4em;
-        color: $symbol-color;
+        @include text-gradiant($symbol-color, $symbol-color2);
     }
     &__title {
         margin-top: .5em;
@@ -71,14 +71,15 @@
 }
 
 .second-menu {
-    color: $second-color;
     @include scale-anim;
     &__title {
+        @include text-gradiant($second-color, $second-color2);
         font-family: $font-croissant;
         font-size: 2em;
         margin-bottom: 35px;
     }
     &__p {
+        color: $second-color;
         margin-top: 0;
         font-family: $font-libre;
         font-weight: bold;
@@ -87,13 +88,14 @@
 }
 
 .third-menu {
-    color: $third-color;
     @include scale-anim;
     &__title {
+        @include text-gradiant($third-color, $third-color2);
         font-family: $font-allura;
         font-size: 3.5em;
     }
     &__p {
+        color: $third-color2;
         margin-top: 0;
         font-family: $font-caveat;
         font-size: $font-menu;
@@ -101,13 +103,14 @@
 }
 
 .fourth-menu {
-    color: $fourth-color;
     @include scale-anim;
     &__title {
+        @include text-gradiant($fourth-color, $fourth-color2);
         font-family: $font-kaushan;
         font-size: 3em;
     }
     &__p {
+        color: $fourth-color3;
         margin-top: 0;
         font-family: $font-caveat;
         font-size: $font-menu;
@@ -138,8 +141,8 @@
     &__all {
         display: flex;
         align-items: baseline;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 50px;
+        padding-right: 50px;
         @include scale-anim;
         &:hover > .dots > .dots__anim {
             animation: dots 1500ms ease-in-out infinite;
@@ -151,8 +154,10 @@
             }
         }
         &__text {
+            margin-top: 10px;
+            margin-bottom: 10px;
             font-family: $font-main;
-            font-size: 1.5em;
+            font-size: 2em;
             color: $title-color;
             margin-right: .3em;
            

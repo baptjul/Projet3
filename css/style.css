@@ -24,7 +24,7 @@ a {
 .header {
   box-sizing: border-box;
   background-color: #579c87;
-  height: 10rem;
+  height: 12rem;
   text-align: center;
   width: 100%;
   border: 1px solid #579c87;
@@ -166,7 +166,9 @@ a {
 }
 .first-menu i {
   font-size: 4em;
-  color: #f5856d;
+  background: linear-gradient(to right, #f04d5f 0%, #f6916a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .first-menu__title {
   margin-top: 0.5em;
@@ -182,7 +184,6 @@ a {
 }
 
 .second-menu {
-  color: #c77412;
   transform: scale(1);
   transition: transform 400ms;
 }
@@ -190,11 +191,15 @@ a {
   transform: scale(1.15);
 }
 .second-menu__title {
+  background: linear-gradient(to right, #c77412 0%, #8f5aff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: "Croissant One", cursive;
   font-size: 2em;
   margin-bottom: 35px;
 }
 .second-menu__p {
+  color: #c77412;
   margin-top: 0;
   font-family: "Libre Baskerville", serif;
   font-weight: bold;
@@ -202,7 +207,6 @@ a {
 }
 
 .third-menu {
-  color: #0887fb;
   transform: scale(1);
   transition: transform 400ms;
 }
@@ -210,17 +214,20 @@ a {
   transform: scale(1.15);
 }
 .third-menu__title {
+  background: linear-gradient(to right, #0235e1 0%, #0889fb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: "Allura", cursive;
   font-size: 3.5em;
 }
 .third-menu__p {
+  color: #0889fb;
   margin-top: 0;
   font-family: "Caveat", cursive;
   font-size: 60px;
 }
 
 .fourth-menu {
-  color: #75c05a;
   transform: scale(1);
   transition: transform 400ms;
 }
@@ -228,10 +235,14 @@ a {
   transform: scale(1.15);
 }
 .fourth-menu__title {
+  background: linear-gradient(to right, #4fa143 0%, #beff7f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: "Kaushan Script", cursive;
   font-size: 3em;
 }
 .fourth-menu__p {
+  color: #72bf56;
   margin-top: 0;
   font-family: "Caveat", cursive;
   font-size: 60px;
@@ -260,8 +271,8 @@ a {
 .next__all {
   display: flex;
   align-items: baseline;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
   transform: scale(1);
   transition: transform 400ms;
 }
@@ -282,8 +293,10 @@ a {
   animation-delay: 900ms;
 }
 .next__all__text {
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-family: "Noto Sans JP", sans-serif;
-  font-size: 1.5em;
+  font-size: 2em;
   color: #fdcb46;
   margin-right: 0.3em;
 }
@@ -382,7 +395,9 @@ a {
   margin-bottom: 1em;
 }
 .menu-title1 i {
-  color: #f5856d;
+  background: linear-gradient(to right, #f04d5f 0%, #f6916a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 3em;
   margin-bottom: 0;
 }
@@ -437,7 +452,9 @@ a {
   font-family: "Devonshire", cursive;
 }
 .end-page i {
-  color: #f5856d;
+  background: linear-gradient(to right, #f04d5f 0%, #f6916a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-right: 0.5em;
 }
 
@@ -463,7 +480,9 @@ a {
 
 .menu-title2 {
   font-family: "Croissant One", cursive;
-  color: #c77412;
+  background: linear-gradient(to right, #c77412 0%, #8f5aff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 3em;
   text-align: center;
   margin-bottom: 3em;
@@ -591,7 +610,9 @@ a {
 
 .menu-title3 {
   font-family: "Allura", cursive;
-  color: #0887fb;
+  background: linear-gradient(to right, #0235e1 0%, #0889fb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 4em;
   text-align: center;
   margin-bottom: 1.5em;
@@ -619,7 +640,9 @@ a {
 
 .menu-title4 {
   font-family: "Kaushan Script", cursive;
-  color: #75c05a;
+  background: linear-gradient(to right, #4fa143 0%, #beff7f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 4em;
   text-align: center;
   margin-bottom: 2em;
