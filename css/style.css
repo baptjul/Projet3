@@ -336,7 +336,7 @@ a {
 .category__title span {
   position: relative;
 }
-.category__title span:before {
+.category__title span::before {
   content: "";
   position: absolute;
   width: 0;
@@ -347,7 +347,7 @@ a {
   visibility: hidden;
   transition: all 400ms ease-in-out;
 }
-.category__title span:hover:before {
+.category__title span:hover::before {
   visibility: visible;
   width: 100%;
 }
@@ -422,7 +422,7 @@ a {
 .category-first__title span {
   position: relative;
 }
-.category-first__title span:before {
+.category-first__title span::before {
   content: "";
   position: absolute;
   width: 0;
@@ -433,7 +433,7 @@ a {
   visibility: hidden;
   transition: all 400ms ease-in-out;
 }
-.category-first__title span:hover:before {
+.category-first__title span:hover::before {
   visibility: visible;
   width: 100%;
 }
@@ -499,7 +499,7 @@ a {
 .category__title1 span {
   position: relative;
 }
-.category__title1 span:before {
+.category__title1 span::before {
   content: "";
   position: absolute;
   width: 0;
@@ -510,7 +510,7 @@ a {
   visibility: hidden;
   transition: all 400ms ease-in-out;
 }
-.category__title1 span:hover:before {
+.category__title1 span:hover::before {
   visibility: visible;
   width: 100%;
 }
@@ -525,7 +525,7 @@ a {
 .category__title2 span {
   position: relative;
 }
-.category__title2 span:before {
+.category__title2 span::before {
   content: "";
   position: absolute;
   width: 0;
@@ -536,7 +536,7 @@ a {
   visibility: hidden;
   transition: all 400ms ease-in-out;
 }
-.category__title2 span:hover:before {
+.category__title2 span:hover::before {
   visibility: visible;
   width: 100%;
 }
@@ -551,7 +551,7 @@ a {
 .category__title3 span {
   position: relative;
 }
-.category__title3 span:before {
+.category__title3 span::before {
   content: "";
   position: absolute;
   width: 0;
@@ -562,7 +562,7 @@ a {
   visibility: hidden;
   transition: all 400ms ease-in-out;
 }
-.category__title3 span:hover:before {
+.category__title3 span:hover::before {
   visibility: visible;
   width: 100%;
 }

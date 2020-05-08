@@ -66,7 +66,7 @@
 
 @mixin underline-animation($color) {
     position: relative;
-        &:before {
+        &::before {
             content: "";
             position: absolute;
             width: 0;
@@ -77,7 +77,7 @@
             visibility: hidden;
             transition: all 400ms ease-in-out;
         }
-        &:hover:before {
+        &:hover::before {
             visibility: visible;
             width: 100%;
           }
