@@ -11,15 +11,14 @@
 
 .category {
     margin-bottom: 5rem;
+    font-family: $font-handlee;
     &__title{
         @include category-title;
-        font-family: $font-base;
         span {
             @include underline-animation(black);
         }
     }
     &__main {
-        font-family: $font-caveat;
         p {
             @include p-menu;
             }

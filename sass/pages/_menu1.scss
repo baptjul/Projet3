@@ -22,15 +22,15 @@
 .category-first {
     margin-bottom: 5rem;
     color: $first-color;
+    font-family: $font-handlee;
     &__title{
+        font-weight: bold;
         @include category-title;
-        font-family: $font-base;
         span {
             @include underline-animation($first-color);
         }
     }
     &__main {
-        font-family: $font-caveat;
         p {
             @include p-menu;
             }
