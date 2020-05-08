@@ -116,7 +116,7 @@ a {
   justify-content: center;
   align-items: center;
   background-color: #fcdfdb;
-  transition: background-color 400ms;
+  transition: all 400ms;
 }
 .boxing__first:hover {
   background-color: rgba(252, 223, 219, 0);
@@ -127,7 +127,7 @@ a {
   justify-content: center;
   align-items: center;
   background-color: #fff5fe;
-  transition: background-color 400ms;
+  transition: all 400ms;
 }
 .boxing__second:hover {
   background-color: rgba(255, 245, 254, 0);
@@ -138,7 +138,7 @@ a {
   justify-content: center;
   align-items: center;
   background-color: #f2f2f2;
-  transition: background-color 400ms;
+  transition: all 400ms;
 }
 .boxing__third:hover {
   background-color: rgba(242, 242, 242, 0);
@@ -149,7 +149,7 @@ a {
   justify-content: center;
   align-items: center;
   background-color: #fdfffd;
-  transition: background-color 400ms;
+  transition: all 400ms;
 }
 .boxing__fourth:hover {
   background-color: rgba(253, 255, 253, 0);
@@ -279,17 +279,17 @@ a {
 .next__all:hover {
   transform: scale(1.15);
 }
-.next__all:hover > .dots > .dots__anim {
+.next__all > .dots > .dots__anim {
   animation: dots 1500ms ease-in-out infinite;
   animation-direction: alternate;
 }
-.next__all:hover > .dots > .dots__anim--1 {
+.next__all > .dots > .dots__anim--1 {
   animation-delay: 300ms;
 }
-.next__all:hover > .dots > .dots__anim--2 {
+.next__all > .dots > .dots__anim--2 {
   animation-delay: 600ms;
 }
-.next__all:hover > .dots > .dots__anim--3 {
+.next__all > .dots > .dots__anim--3 {
   animation-delay: 900ms;
 }
 .next__all__text {
@@ -331,6 +331,7 @@ a {
   text-align: center;
   font-size: 2.5em;
   margin-bottom: 2.8em;
+  line-height: 55%;
 }
 .category__title span {
   position: relative;
@@ -377,6 +378,7 @@ a {
   margin-bottom: 3rem;
   padding: 8rem 150px 8rem 150px;
   background-color: #fcdfdb;
+  padding: 8rem 150px 8rem 150px;
 }
 @media (max-width: 992px) {
   .box-first {
@@ -410,10 +412,12 @@ a {
   font-family: "Handlee", cursive;
 }
 .category-first__title {
+  line-height: 50%;
   font-weight: bold;
   text-align: center;
   font-size: 2.5em;
   margin-bottom: 2.8em;
+  line-height: 55%;
 }
 .category-first__title span {
   position: relative;
@@ -436,6 +440,43 @@ a {
 .category-first__main p {
   margin-top: 8px;
   font-size: 32px;
+}
+
+.img1 {
+  image-orientation: 180deg;
+  width: 30%;
+  height: 23px;
+  float: left;
+}
+@media (max-width: 992px) {
+  .img1 {
+    width: 23%;
+    height: 15px;
+  }
+}
+@media (max-width: 420px) {
+  .img1 {
+    width: 10%;
+    height: 10px;
+  }
+}
+
+.img2 {
+  width: 30%;
+  height: 23px;
+  float: right;
+}
+@media (max-width: 992px) {
+  .img2 {
+    width: 20%;
+    height: 15px;
+  }
+}
+@media (max-width: 420px) {
+  .img2 {
+    width: 10%;
+    height: 10px;
+  }
 }
 
 .end-page {
@@ -485,6 +526,7 @@ a {
   text-align: center;
   font-size: 2.5em;
   margin-bottom: 2.8em;
+  line-height: 55%;
   font-family: "Libre Baskerville", serif;
   color: #ca7c21;
 }
@@ -510,6 +552,7 @@ a {
   text-align: center;
   font-size: 2.5em;
   margin-bottom: 2.8em;
+  line-height: 55%;
   font-family: "Libre Baskerville", serif;
   color: #b783ad;
 }
@@ -535,6 +578,7 @@ a {
   text-align: center;
   font-size: 2.5em;
   margin-bottom: 2.8em;
+  line-height: 55%;
   font-family: "Libre Baskerville", serif;
   color: #7e5fd2;
 }

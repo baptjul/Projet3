@@ -144,7 +144,7 @@
         padding-left: 50px;
         padding-right: 50px;
         @include scale-anim;
-        &:hover > .dots > .dots__anim {
+        & > .dots > .dots__anim {
             animation: dots 1500ms ease-in-out infinite;
             animation-direction: alternate;
             @for $i from 1 through 3 {
