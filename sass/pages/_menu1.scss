@@ -1,5 +1,6 @@
 .box-first {
     @include box-pages($background-1);
+    width: 65%;
     padding: 8rem 150px 8rem 150px;
 }
 
@@ -25,47 +26,22 @@
     color: $first-color;
     font-family: $font-handlee;
     &__title{
-        line-height: 50%;
         font-weight: bold;
         @include category-title;
         span {
             @include underline-animation($first-color);
         }
     }
-    &__main {
-        p {
-            @include p-menu;
-            }
-    }
 }
 
 .img1 {
-    image-orientation: 180deg;
-    width: 30%;
-    height: 23px;
     float: left;
-    @media (max-width: 992px) {
-        width: 23%;
-        height: 15px;
-    }
-    @media (max-width: 420px) {
-        width: 10%;
-        height: 10px;
-    }
+    @include sides-first;
 }
 
 .img2 {
-    width: 30%;
-    height: 23px;
     float: right;
-    @media (max-width: 992px) {
-        width: 20%;
-        height: 15px;
-    }
-    @media (max-width: 420px) {
-        width: 10%;
-        height: 10px;
-    }
+    @include sides-first;
 }
 
 .end-page {

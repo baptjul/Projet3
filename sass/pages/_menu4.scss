@@ -1,5 +1,7 @@
 .box-fourth {
     @include box-pages($background-4);
+    width: 87%;
+    padding: 8rem 0 10rem 0;
 }
 
 .menu-title4 {

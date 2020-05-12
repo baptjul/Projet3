@@ -1,5 +1,16 @@
 .box-third {
     @include box-pages($background-3);
+    width: 87%;
+    padding: 8rem 0 10rem 0;
+}
+
+.category {
+    &__plate {
+        @include padding-box;
+        p {
+            @include p-menu;
+            }
+    }
 }
 
 .menu-title3 {

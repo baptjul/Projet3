@@ -10,12 +10,8 @@
 }
 
 @mixin background-color-anim($color) {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: rgba($color, 1);
-    transition: all 400ms;
+    transition: all 600ms;
     &:hover {
        background-color: rgba($color, 0);
     }
@@ -34,12 +30,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 65%;
     height: 100%;
     margin: auto;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    padding: 8rem 150px 8rem 150px;
     background-color: $color;
     @media (max-width: 992px) {
         width: 80%;
@@ -48,10 +42,19 @@
 }
 
 @mixin category-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
     font-size: 2.5em;
     margin-bottom: 2.8em;
-    line-height: 55%;
+}
+
+@mixin padding-box {
+    padding: 0 150px 0 150px;
+    @media (max-width: 992px) {
+        padding: 0 18px 0 18px;
+    }
 }
 
 @mixin p-menu{
@@ -61,7 +64,54 @@
 
 @mixin p-menu2{
     margin-top: 8px;
-    font-size: 30px;
+    font-size: 28px;
+}
+
+@mixin sides-first {
+    width: 30%;
+    height: 50px;
+    @media (max-width: 992px) {
+        width: 22%;
+        height: 30px;
+    }
+    @media (max-width: 499px) {
+        width: 15%;
+        height: 20px;
+    }
+}
+
+@mixin sides-right {
+    margin-right: 35px;
+    margin-left: 10px;
+    width: 30%;
+    height: 50px;
+    @media (max-width: 992px) {
+        margin-left: 5px;
+        margin-right: 0;
+    }
+    @media (max-width: 520px) {
+        width: 10%;
+        height: 35px;
+        margin-left: 2px;
+        margin-right: 0;
+    }
+}
+
+@mixin sides-left {
+    margin-left: 35px;
+    margin-right: 10px;
+    width: 30%;
+    height: 50px;
+    @media (max-width: 992px) {
+        margin-left: 0;
+        margin-right: 5px;
+    }
+    @media (max-width: 520px) {
+        width: 10%;
+        height: 35px;
+        margin-left: 0;
+        margin-right: 2px;
+    }
 }
 
 @mixin underline-animation($color) {
