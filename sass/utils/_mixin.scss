@@ -19,6 +19,9 @@
     &:hover {
        background-color: rgba($color, 0);
     }
+    //& > [href*='menu'] {
+    //    transform: scale(1.15);
+    //}
 }
 
 @mixin scale-anim {
