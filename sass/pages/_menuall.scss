@@ -13,7 +13,7 @@
     margin-bottom: 5rem;
     font-family: $font-handlee;
     &__title{
-        @include category-title;
+        @include category-title ;
         span {
             @include underline-animation(black);
         }
@@ -25,14 +25,26 @@
     }
 }
 
+.img_left {
+    float: left;
+    @include sides-left;
+}
 
+.img_right {
+    float: right;
+    @include sides-right;
+}
 
 .main-cours { 
     display: flex;
     justify-content: space-between;
+    & p:nth-child(1) {
+        margin-right: 20px;
+    }
     &__prices {
         font-weight: bold;
-        margin-left: 15px;
         align-items: center;;
     }
 }
+
+
