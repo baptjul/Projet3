@@ -337,11 +337,13 @@ article:nth-child(4):hover {
 }
 @media (max-width: 992px) {
   .img_left {
+    width: 20%;
+    height: 40px;
     margin-left: 0;
     margin-right: 5px;
   }
 }
-@media (max-width: 520px) {
+@media (max-width: 540px) {
   .img_left {
     width: 10%;
     height: 35px;
@@ -359,11 +361,13 @@ article:nth-child(4):hover {
 }
 @media (max-width: 992px) {
   .img_right {
+    width: 20%;
+    height: 40px;
     margin-left: 5px;
     margin-right: 0;
   }
 }
-@media (max-width: 520px) {
+@media (max-width: 540px) {
   .img_right {
     width: 10%;
     height: 35px;
@@ -467,7 +471,7 @@ article:nth-child(4):hover {
     height: 30px;
   }
 }
-@media (max-width: 499px) {
+@media (max-width: 540px) {
   .img1 {
     width: 15%;
     height: 20px;
@@ -485,7 +489,7 @@ article:nth-child(4):hover {
     height: 30px;
   }
 }
-@media (max-width: 499px) {
+@media (max-width: 540px) {
   .img2 {
     width: 15%;
     height: 20px;
