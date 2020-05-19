@@ -12,16 +12,14 @@
     display: flex;
     justify-content: space-between;
     background-color: $main-color;
-    height: 6rem;
     width: 100%;
     padding: 0 2rem 0 2rem;
-    border: 1px solid $main-color;
     position : sticky;
     bottom: 0;
     z-index: 2;
     &__content {
         color: $title-color;
-        margin-top: 2rem;
+        
         font-family: $font-main;
         font-size: 1.5em;
         &:hover {

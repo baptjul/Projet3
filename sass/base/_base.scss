@@ -1,14 +1,16 @@
 html {
-    font-size: 100%;
-    @media (max-width: 1360px) {
-        font-size: 90%;
-    }
-    @media (max-width: 720px) {
-        font-size: 72%;
-    }
+    height: 100%;
 }
 
 body {
     margin: 0;
     background: $background-all;
+    font-size: 85%;
+    @media (max-width: 1360px) {
+        font-size: 70%;
+    }
+    @media (max-width: 720px) {
+        font-size: 62%;
+    }
+
 }

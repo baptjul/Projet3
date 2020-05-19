@@ -1,23 +1,23 @@
 .container {
     text-align: center;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(450px, 35%));
-    grid-auto-rows: 950px;
+    grid-template-columns: repeat(2, minmax(400px, 30%));
+    grid-auto-rows: 780px;
     place-content: center;
     grid-gap: 60px;
     margin-top: 5rem;
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
     @media (max-width: 1360px) {
-        grid-auto-rows: 700px;
+        grid-auto-rows: 550px;
     }
     @media (max-width: 992px) {
         grid-template-columns: 85%;
-        grid-auto-rows: 700px;
+        grid-auto-rows: 650px;
         grid-gap: 40px;
     }
     @media (max-width: 420px) {

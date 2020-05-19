@@ -1,38 +1,249 @@
 .content-page {
-    margin-top: 5rem;
-    margin-bottom: 6rem;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
     &__title {
         font-family: $font-main;
         color: black;
-        font-size: 3.5em;
+        font-size: 3em;
         text-align: center;
+    }
+}
+
+.box {
+    @include shadow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    &--pink {
+        background-color: $background-1;
+        width: 65%;
+        padding: 8rem 150px 8rem 150px;
+    }
+    &--light {
+        @include pad-width;
+        background-color: $background-2;
+    }
+    &--grey {
+        @include pad-width;
+        background-color: $background-3;
+    }
+    &--white {
+        @include pad-width;
+        background-color: $background-4;
+    }
+    @media (max-width: 992px) {
+        width: 80%;
+        padding: 5rem 18px 5rem 18px;
     }
 }
 
 .category {
     margin-bottom: 5rem;
-    font-family: $font-handlee;
     &__title{
-        @include category-title ;
-        span {
-            @include underline-animation(black);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        font-size: 2.2em;
+        margin-bottom: 2.8em;
+        &--bold {
+            font-weight: bold;
         }
     }
+    &--orange {
+        color: $menu-orange;
+    }
+    &--lightpurple {
+        color: $menu-lightpurple;
+    }
+    &--purple {
+        color: $menu-purple;
+    }
     &__main {
+        font-size: 2em;
         p {
-            @include p-menu;
-            }
+            margin-top: 8px;
+        }
+    }
+    &__plate {
+        font-size: 1.8em;
+        p {
+            margin-top: 8px;
+        }
+    }
+    &--padding {
+        padding: 0 150px 0 150px;
+        @media (max-width: 992px) {
+            padding: 0 18px 0 18px;
+        }
     }
 }
 
-.img_left {
-    float: left;
-    @include sides-left;
+.menu-title1 {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 1em;
+    i {
+        @include text-gradiant($symbol-color, $symbol-color2);
+        font-size: 3em;
+        margin-bottom: 0;
+    }
+    &__text {
+        font-family: $font-devonshire;
+        font-size: 2em;
+        color: $first-color;
+        margin-top: 15px;
+    }
 }
 
-.img_right {
+.menu-title2 {
+    font-family: $font-croissant;
+    @include text-gradiant($second-color, $second-color2);
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.menu-title3 {
+    font-family: $font-allura;
+    @include text-gradiant($third-color, $third-color2);
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.menu-title4 {
+    font-family: $font-kaushan;
+    @include text-gradiant($fourth-color, $fourth-color2);;
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.underline {
+    position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            background-color: black;
+            visibility: hidden;
+            transition: all 400ms ease-in-out;
+        }
+        &:hover::before {
+            visibility: visible;
+            width: 100%;
+          }
+    &--brown {
+        &::before {
+            background-color: $first-color;
+        }
+    }
+    &--orange {
+        &::before {
+            background-color: $menu-orange;
+        }
+    }
+    &--lightpurple {
+        &::before {
+            background-color: $menu-lightpurple;
+        }
+    }
+    &--purple {
+        &::before {
+            background-color: $menu-purple;
+        }
+    }
+    &--darkblue {
+        &::before {
+            background-color: $third-color;
+        }
+    }
+    &--lightblue {
+        &::before {
+            background-color: $third-color2;
+        }
+    }
+    &--green {
+        &::before {
+            background-color: $fourth-color2;
+        }
+    }
+}
+
+.font-h {
+    font-family: $font-handlee;
+    &--color1 {
+        color: $first-color;
+    }
+}
+
+.font-l {
+    font-family: $font-libre;
+}
+
+.img-left {
+    float: left;
+    &--pad {
+        margin-left: 35px;
+        margin-right: 10px;
+        width: 30%;
+        height: 50px;
+        @media (max-width: 992px) {
+            width: 20%;
+            height: 40px;
+            margin-left: 0;
+            margin-right: 5px;
+        }
+        @media (max-width: 540px) {
+            width: 10%;
+            height: 35px;
+            margin-left: 0;
+            margin-right: 2px;
+        }
+    }
+}
+
+.img-right {
     float: right;
-    @include sides-right;
+    &--pad {
+        margin-right: 35px;
+        margin-left: 10px;
+        width: 30%;
+        height: 50px;
+        @media (max-width: 992px) {
+            width: 20%;
+            height: 40px;
+            margin-left: 5px;
+            margin-right: 0;
+        }
+        @media (max-width: 540px) {
+            width: 10%;
+            height: 35px;
+            margin-left: 2px;
+            margin-right: 0;
+        }
+    }
+}
+
+.img-pad {
+    width: 30%;
+    height: 50px;
+    @media (max-width: 992px) {
+        width: 22%;
+        height: 30px;
+    }
+    @media (max-width: 540px) {
+        width: 15%;
+        height: 20px;
+    }
 }
 
 .main-cours { 
@@ -47,4 +258,13 @@
     }
 }
 
-
+.end-page {
+    text-align: center;
+    color: $first-color;
+    font-size: 50px;
+    font-family: $font-devonshire;
+    i {
+        @include text-gradiant($symbol-color, $symbol-color2);
+        margin-right: 0.5em;
+    }
+}
