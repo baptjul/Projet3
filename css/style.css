@@ -62,7 +62,7 @@ a {
 .footer__content {
   color: #fdcb46;
   font-family: "Noto Sans JP", sans-serif;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 .footer__content:hover {
   animation: shake 100ms cubic-bezier(0.54, 0.17, 0.42, 0.85) 3;
