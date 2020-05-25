@@ -1,13 +1,12 @@
 .header {
     box-sizing: border-box;
     background-color: $main-color;
-    height: auto;
     text-align: center;
+    height: auto;
     width: 100%;
+    padding: 20px;
     &__title {
         display: inline-block;
-        margin-top: 20px;
-        margin-bottom: 25px;
         color: $title-color;
         font-family: $font-main;
         font-size: 4.5em;

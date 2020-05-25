@@ -6,8 +6,8 @@
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(400px, 30%));
-    grid-auto-rows: 780px;
+    grid-template-columns: repeat(2, minmax(400px, 26%));
+    grid-auto-rows: 700px;
     place-content: center;
     grid-gap: 60px;
     margin-top: 5rem;
@@ -123,7 +123,6 @@ article:nth-child(4) {
 .next {
     display: inline-block;
     background-color: $main-color;
-    border: 1px solid $main-color;
     border-radius: 15px;
     overflow: hidden;
     a {

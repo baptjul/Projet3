@@ -1,20 +1,25 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
 html {
   height: 100%;
 }
 
 body {
-  margin: 0;
   background: #ffffff;
-  font-size: 85%;
+  font-size: 14px;
 }
 @media (max-width: 1360px) {
   body {
-    font-size: 70%;
+    font-size: 11.2px;
   }
 }
 @media (max-width: 720px) {
   body {
-    font-size: 62%;
+    font-size: 10px;
   }
 }
 
@@ -25,14 +30,13 @@ a {
 .header {
   box-sizing: border-box;
   background-color: #579c87;
-  height: auto;
   text-align: center;
+  height: auto;
   width: 100%;
+  padding: 20px;
 }
 .header__title {
   display: inline-block;
-  margin-top: 20px;
-  margin-bottom: 25px;
   color: #fdcb46;
   font-family: "Noto Sans JP", sans-serif;
   font-size: 4.5em;
@@ -54,7 +58,7 @@ a {
   justify-content: space-between;
   background-color: #579c87;
   width: 100%;
-  padding: 0 2rem 0 2rem;
+  padding: 25px;
   position: sticky;
   bottom: 0;
   z-index: 2;
@@ -76,8 +80,8 @@ a {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(400px, 30%));
-  grid-auto-rows: 780px;
+  grid-template-columns: repeat(2, minmax(400px, 26%));
+  grid-auto-rows: 700px;
   place-content: center;
   grid-gap: 60px;
   margin-top: 5rem;
@@ -229,7 +233,6 @@ article:nth-child(4):hover {
 .next {
   display: inline-block;
   background-color: #579c87;
-  border: 1px solid #579c87;
   border-radius: 15px;
   overflow: hidden;
 }
@@ -308,17 +311,17 @@ article:nth-child(4):hover {
 }
 .box--light {
   width: 87%;
-  padding: 8rem 0 10rem 0;
+  padding: 10rem 0 10rem 0;
   background-color: #fff5fe;
 }
 .box--grey {
   width: 87%;
-  padding: 8rem 0 10rem 0;
+  padding: 10rem 0 10rem 0;
   background-color: #f2f2f2;
 }
 .box--white {
   width: 87%;
-  padding: 8rem 0 10rem 0;
+  padding: 10rem 0 10rem 0;
   background-color: #fdfffd;
 }
 @media (max-width: 992px) {
@@ -375,7 +378,7 @@ article:nth-child(4):hover {
 .menu-title1 {
   font-size: 3em;
   text-align: center;
-  margin-bottom: 1em;
+  margin-bottom: 2.5em;
 }
 .menu-title1 i {
   background: linear-gradient(to right, #f04d5f 0%, #f6916a 100%);
@@ -398,7 +401,7 @@ article:nth-child(4):hover {
   -webkit-text-fill-color: transparent;
   font-size: 3em;
   text-align: center;
-  margin-bottom: 3em;
+  margin-bottom: 4em;
 }
 
 .menu-title3 {
@@ -408,7 +411,7 @@ article:nth-child(4):hover {
   -webkit-text-fill-color: transparent;
   font-size: 4em;
   text-align: center;
-  margin-bottom: 1.5em;
+  margin-bottom: 3em;
 }
 
 .menu-title4 {
@@ -418,7 +421,7 @@ article:nth-child(4):hover {
   -webkit-text-fill-color: transparent;
   font-size: 4em;
   text-align: center;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 
 .underline {
@@ -567,10 +570,9 @@ article:nth-child(4):hover {
 }
 
 .soon {
-  margin-top: 10rem;
-  margin-bottom: 10rem;
+  margin-top: 8rem;
   text-align: center;
-  height: 40rem;
+  min-height: 80vh;
   font-family: "Noto Sans JP", sans-serif;
 }
 .soon i {
@@ -580,10 +582,12 @@ article:nth-child(4):hover {
 }
 .soon__title {
   margin-top: 0;
+  margin-bottom: 30px;
   font-size: 5rem;
   color: #fdcb46;
 }
 .soon__text {
+  margin-top: 30px;
   font-size: 1em;
   color: black;
 }
@@ -618,8 +622,7 @@ article:nth-child(4):hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
   border-radius: 15px;
   margin-top: 5rem;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding: 10px;
   transform: scale(1);
   transition: transform 300ms;
 }
@@ -628,16 +631,18 @@ article:nth-child(4):hover {
 }
 
 .content-legal {
-  margin: 8rem 5rem 8rem 5rem;
+  margin: 5rem 5rem 8rem 5rem;
   font-family: "Noto Sans JP", sans-serif;
 }
 .content-legal h2 {
   text-align: center;
   font-size: 2.5em;
+  margin-bottom: 50px;
 }
 .content-legal h3 {
   font-size: 1.8em;
   text-decoration: underline;
+  margin: 10px 0 25px 0;
 }
 .content-legal p {
   font-size: 1.3em;

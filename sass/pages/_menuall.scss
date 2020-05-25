@@ -86,7 +86,7 @@
 .menu-title1 {
     font-size: 3em;
     text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: 2.5em;
     i {
         @include text-gradiant($symbol-color, $symbol-color2);
         font-size: 3em;
@@ -105,7 +105,7 @@
     @include text-gradiant($second-color, $second-color2);
     font-size: 3em;
     text-align: center;
-    margin-bottom: 3em;
+    margin-bottom: 4em;
 }
 
 .menu-title3 {
@@ -113,7 +113,7 @@
     @include text-gradiant($third-color, $third-color2);
     font-size: 4em;
     text-align: center;
-    margin-bottom: 1.5em;
+    margin-bottom: 3em;
 }
 
 .menu-title4 {
@@ -121,7 +121,7 @@
     @include text-gradiant($fourth-color, $fourth-color2);;
     font-size: 4em;
     text-align: center;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
 }
 
 .underline {
