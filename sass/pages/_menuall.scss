@@ -13,7 +13,7 @@
     @include shadow;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 100%;
     margin: auto;
     margin-top: 3rem;
@@ -190,46 +190,40 @@
 }
 
 .img-left {
-    float: left;
-    &--pad {
-        margin-left: 35px;
-        margin-right: 10px;
-        width: 30%;
-        height: 50px;
-        @media (max-width: 992px) {
-            width: 20%;
-            height: 40px;
-            margin-left: 0;
-            margin-right: 5px;
-        }
-        @media (max-width: 540px) {
-            width: 10%;
-            height: 35px;
-            margin-left: 0;
-            margin-right: 2px;
-        }
+    margin-left: 35px;
+    margin-right: 10px;
+    width: 30%;
+    height: 50px;
+    @media (max-width: 992px) {
+        width: 20%;
+        height: 40px;
+        margin-left: 0;
+        margin-right: 5px;
+    }
+    @media (max-width: 540px) {
+        width: 10%;
+        height: 35px;
+        margin-left: 0;
+        margin-right: 2px;
     }
 }
 
 .img-right {
-    float: right;
-    &--pad {
-        margin-right: 35px;
-        margin-left: 10px;
-        width: 30%;
-        height: 50px;
-        @media (max-width: 992px) {
-            width: 20%;
-            height: 40px;
-            margin-left: 5px;
-            margin-right: 0;
-        }
-        @media (max-width: 540px) {
-            width: 10%;
-            height: 35px;
-            margin-left: 2px;
-            margin-right: 0;
-        }
+    margin-right: 35px;
+    margin-left: 10px;
+    width: 30%;
+    height: 50px;
+    @media (max-width: 992px) {
+        width: 20%;
+        height: 40px;
+        margin-left: 5px;
+        margin-right: 0;
+    }
+    @media (max-width: 540px) {
+        width: 10%;
+        height: 35px;
+        margin-left: 2px;
+        margin-right: 0;
     }
 }
 
