@@ -1,0 +1,73 @@
+@keyframes dots {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.next {
+    display: inline-block;
+    background-color: $main-color;
+    border-radius: 15px;
+    overflow: hidden;
+    a {
+        text-align: center;
+        
+    }
+    &__all {
+        display: flex;
+        align-items: baseline;
+        padding-left: 50px;
+        padding-right: 50px;
+        @include scale-anim;
+        & > .dots > .dots__anim {
+            animation: dots 1500ms ease-in-out infinite;
+            animation-direction: alternate;
+            @for $i from 1 through 3 {
+                &--#{$i} {
+                    animation-delay: 300ms * $i;
+                }
+            }
+        }
+        &__text {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-family: $font-main;
+            font-size: 2em;
+            color: $title-color;
+            margin-right: .3em;
+           
+        }
+    }
+}
+
+.dots {
+    display: flex;
+    &__anim {
+        width: 6px;
+        height: 6px;
+        background-color: $title-color;
+        border-radius: 100%;
+        margin-right: 2px;
+    }
+}
+            
+.button {
+    display: inline-block;
+    background-color: $main-color;
+    color: $title-color;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.35);
+    border-radius: 15px;
+    margin-top: 5rem;
+    padding: 10px;
+    transform: scale(1);
+    transition: transform 300ms;
+    &:hover {
+        transform: scale(0.95)
+    }
+}
